@@ -1,0 +1,30 @@
+{
+  "git.detectSubmodulesLimit": 10,
+  "git.detectSubmodules": false,
+  "terminal.integrated.profiles.osx": {
+    "fish": {
+      "path": "/usr/local/bin/fish",
+      // executes command to source the script before going interactive
+      "args": [
+        "-C",
+        "source ./scripts/track-history.fish"
+      ]
+    }
+  },
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash",
+      "args": [
+        "--init-file",
+        "${workspaceRoot}/scripts/bash_init.sh"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none",
+}

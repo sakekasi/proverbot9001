@@ -18,3 +18,8 @@ report/
 *.mypy_cache/*
 */.mypy_cache/*
 *.lock
+.venv
+proverbot-env
+.fish_history
+search-report/
+.bash_history
