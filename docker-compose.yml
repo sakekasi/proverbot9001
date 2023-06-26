@@ -2,8 +2,8 @@ version: '3.8'
 
 services:
   dev:
+    platform: ${DOCKER_PLATFORM:-linux/amd64}
     build:
-      platform: ${DOCKER_PLATFORM:-linux/amd64}
       context: ./docker/dev
       dockerfile: Dockerfile
     restart: unless-stopped
